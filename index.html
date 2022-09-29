@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Login to MasterChat</title>
+        <!--Firebase links-->
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <style>
+            center{
+                display: flex;
+            }
+            center > *{
+                margin: auto;
+            }
+            img{
+                border-radius: 50%;
+                width: 70px;
+            }
+            #innerC2 > *{
+                margin: 80px;
+            }
+            #round{
+                border-radius: 10px;
+                padding: 20px;
+                margin:20px;
+            }
+        </style>
+    </head>
+    <body>
+        <center class="bg-primary text-white" style="width: 50%;height:100vh;float: left;">
+            <div>
+                <h1 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">MasterChat</h1>
+            </div>
+        </center>
+        <center class="text-primary">
+            <div id="innerC2">
+                <h2>Login to MasterChat</h2>
+                <div id="round" class="bg-warning">
+                    <b>Username:</b>
+                    <input class="form-control" id="userI" type="text" placeholder="Type your Username here..."><br>
+                    <button class="btn btn-primary" style="margin:10px;" onclick="login()">Login</button><br>
+                </div>
+            </div>
+        </center>
+    </body>
+    <script src="index.js"></script>
+</html>

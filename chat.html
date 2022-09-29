@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>MasterChat</title>
+        <!--Font Awesome-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+        <!--Firebase links-->
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <style>
+            center{
+                display: flex;
+            }
+            center > *{
+                margin: auto;
+            }
+            img{
+                border-radius: 50%;
+                width: 70px;
+            }
+            #innerC2 > *{
+                margin: 60px;
+            }
+            .round{
+                border-radius: 10px;
+                padding: 50px;
+                margin:20px;
+            }
+            hr{
+                border-color: #0275d8;
+            }
+            #allR label:hover{
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <center class="bg-primary text-white" style="width: 40%;height:100vh;float: left;position: sticky;top:0;left:0;">
+            <div>
+                <button class="btn btn-warning" style="font-size: larger;" onclick="logout()"><i style="margin:5px;" class="far fa-arrow-alt-circle-left"></i>Logout</button>
+                <h1 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">MasterChat</h1>
+            </div>
+        </center>
+        <center class="text-primary">
+            <div id="innerC2">
+                <div class="bg-warning round">
+                    <span id="messages"></span><br>
+                    <form>
+                        <input name="messagesI" class="form-control" placeholder="Enter your Message here..." type="text"><br><input class="btn btn-primary text-white" type="submit">
+                    </form>
+                </div>
+            </div>
+        </center>
+    </body>
+    <script src="chat.js"></script>
+</html>
